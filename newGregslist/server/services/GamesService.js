@@ -26,7 +26,7 @@ class GamesService {
         if (original.creatorId.toString() !== userId) {
             throw new BadRequest('Cannot Delete')
         }
-        await dbContext.Games.findByIdAndRemove({ _id: id, creatorId: userId },)
+        await dbContext.Games.findByIdAndRemove({ _id: id, creatorId: userId })
     }
 
     async edit(updated, activeUserId) {
