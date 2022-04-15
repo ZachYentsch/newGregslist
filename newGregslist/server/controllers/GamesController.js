@@ -1,7 +1,6 @@
 import { Auth0Provider } from "@bcwdev/auth0provider"
 import BaseController from "../utils/BaseController"
 import { gamesService } from "../services/GamesService"
-import e from "express"
 
 export class GamesController extends BaseController {
 
