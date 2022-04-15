@@ -1,8 +1,13 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+  <nav class="navbar navbar-expand-lg navbar-primary bg-primary px-3">
     <router-link class="navbar-brand d-flex" :to="{ name: 'Home' }">
       <div class="d-flex flex-column align-items-center">
-        <img alt="logo" src="../assets/img/cw-logo.png" height="45" />
+        <img
+          alt="logo"
+          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/6873254d-c380-460a-a41f-fbf0a7cce980/d6rv2qa-072dac63-0ffa-4578-a199-172ffbfe5f7a.png"
+          height="60"
+          class="logo"
+        />
       </div>
     </router-link>
     <button
@@ -21,9 +26,25 @@
         <li>
           <router-link
             :to="{ name: 'About' }"
-            class="btn text-success lighten-30 selectable text-uppercase"
+            class="btn text-dark selectable text-uppercase"
           >
-            About
+            <h6>About</h6>
+          </router-link>
+        </li>
+        <li>
+          <router-link
+            :to="{ name: 'Games' }"
+            class="btn text-dark selectable text-uppercase"
+          >
+            <h6>Games</h6>
+          </router-link>
+        </li>
+        <li>
+          <router-link
+            :to="{ name: 'Consoles' }"
+            class="btn text-dark selectable text-uppercase"
+          >
+            <h6>Consoles</h6>
           </router-link>
         </li>
       </ul>
@@ -42,6 +63,9 @@ export default {
 </script>
 
 <style scoped>
+.logo {
+  filter: contrast(180%);
+}
 a:hover {
   text-decoration: none;
 }
